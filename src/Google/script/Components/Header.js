@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import '../css/Header.css';
-import '../../FontAwesome/css/font-awesome.min.css'
+import '../../css/Header.css';
+import '../../../FontAwesome/css/font-awesome.min.css'
 
 class Header extends Component {
     render() {

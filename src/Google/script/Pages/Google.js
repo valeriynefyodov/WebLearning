@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../css/Google.css';
+import '../../css/Google.css';
 
-import Header from './Header';
-import Content from './Content'
+import Header from '../Components/Header';
+import Content from '../Components/Content'
 
 class Google extends Component {
     render () {

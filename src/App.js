@@ -3,10 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import 'path-to-regexp';
 import './App.css';
 
-import Google from './Google/script/Google.js';
-import Mail from './Google/script/RouterComponents/Mail';
-import Images from './Google/script/RouterComponents/Images';
-import TabRouter from './Google/script/RouterComponents/TabRouter';
+import Google from './Google/script/Pages/Google.js';
+import Mail from './Google/script/Pages/Mail';
+import Images from './Google/script/Pages/Images';
+import TabRouter from './Google/script/Pages/TabRouter';
 
 class App extends Component {
     render () {
