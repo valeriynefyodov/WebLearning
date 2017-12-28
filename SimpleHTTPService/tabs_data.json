@@ -1,0 +1,50 @@
+[
+    {
+        "title": "One",
+        "faviconPath": "/img/favicons/favicon1.png",
+        "screenshotPath": "/img/screenshots/screenshot1.png",
+        "path": "/tab1"
+    },
+    {
+        "title": "Two",
+        "faviconPath": "/img/favicons/favicon2.png",
+        "screenshotPath": "/img/screenshots/screenshot2.png",
+        "path": "/tab2"
+    },
+    {
+        "title": "ThreeThreeThreeThreeThreeThreeThree",
+        "faviconPath": "/img/favicons/favicon1.png",
+        "screenshotPath": "/img/screenshots/screenshot1.png",
+        "path": "/tab3"
+    },
+    {
+        "title": "Four",
+        "faviconPath": "/img/favicons/favicon2.png",
+        "screenshotPath": "/img/screenshots/screenshot2.png",
+        "path": "/tab4"
+    },
+    {
+        "title": "Five",
+        "faviconPath": "/img/favicons/favicon2.png",
+        "screenshotPath": "/img/screenshots/screenshot2.png",
+        "path": "/tab5"
+    },
+    {
+        "title": "Six",
+        "faviconPath": "/img/favicons/favicon1.png",
+        "screenshotPath": "/img/screenshots/screenshot1.png",
+        "path": "/tab6"
+    },
+    {
+        "title": "Seven",
+        "faviconPath": "/img/favicons/favicon2.png",
+        "screenshotPath": "/img/screenshots/screenshot2.png",
+        "path": "/tab7"
+    },
+    {
+        "title": "Eight",
+        "faviconPath": "/img/favicons/favicon1.png",
+        "screenshotPath": "/img/screenshots/screenshot1.png",
+        "path": "/tab8"
+    }
+]
