@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61516438-9efc-4f6b-a2ad-f327e0655cb7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Google/script/Dispatcher.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SimpleHTTPService/log.txt" afterPath="$PROJECT_DIR$/SimpleHTTPService/log.txt" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/Content.js" afterPath="$PROJECT_DIR$/src/Google/script/Components/Content.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/Google.js" afterPath="$PROJECT_DIR$/src/Google/script/Pages/Google.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/Header.js" afterPath="$PROJECT_DIR$/src/Google/script/Components/Header.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/Recent.js" afterPath="$PROJECT_DIR$/src/Google/script/Components/Recent.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/RouterComponents/Images.js" afterPath="$PROJECT_DIR$/src/Google/script/Pages/Images.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/RouterComponents/Mail.js" afterPath="$PROJECT_DIR$/src/Google/script/Pages/Mail.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/RouterComponents/TabRouter.js" afterPath="$PROJECT_DIR$/src/Google/script/Pages/TabRouter.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/Search.js" afterPath="$PROJECT_DIR$/src/Google/script/Components/Search.js" />
-      <change beforePath="$PROJECT_DIR$/src/Google/script/Tab.js" afterPath="$PROJECT_DIR$/src/Google/script/Components/Tab.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Google/script/Actions/PortfolioActions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Google/script/Stores/PortfolioStore.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,11 +51,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Google.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Google.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Google/script/Pages/Google.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortfolioStore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Google/script/Stores/PortfolioStore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortfolioActions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Google/script/Actions/PortfolioActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,6 +129,8 @@
         <option value="$PROJECT_DIR$/src/Google/script/Components/Search.js" />
         <option value="$PROJECT_DIR$/src/Google/script/Dispatcher.js" />
         <option value="$PROJECT_DIR$/src/Google/script/Pages/Google.js" />
+        <option value="$PROJECT_DIR$/src/Google/script/Stores/PortfolioStore.js" />
+        <option value="$PROJECT_DIR$/src/Google/script/Actions/PortfolioActions.js" />
       </list>
     </option>
   </component>
@@ -190,6 +200,14 @@
               <item name="Google" type="462c0819:PsiDirectoryNode" />
               <item name="script" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webstorm__react_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webstorm__react_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Google" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="Stores" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,7 +281,7 @@
       <option name="presentableId" value="Default" />
       <updated>1514218297244</updated>
       <workItem from="1514218298701" duration="2151000" />
-      <workItem from="1514221114829" duration="35267000" />
+      <workItem from="1514221114829" duration="35553000" />
     </task>
     <servers />
   </component>
@@ -273,7 +291,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37418000" />
+    <option name="totallyTimeSpent" value="37704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -611,6 +629,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Google/script/Stores/PortfolioStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Google/script/Actions/PortfolioActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
