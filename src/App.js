@@ -6,7 +6,7 @@ import './App.css';
 import Google from './Google/script/Pages/Google.js';
 import Mail from './Google/script/Pages/Mail';
 import Images from './Google/script/Pages/Images';
-import TabRouter from './Google/script/Pages/TabRouter';
+import TabRouter from './Google/script/Pages/TabRenderer';
 
 class App extends Component {
     render () {
