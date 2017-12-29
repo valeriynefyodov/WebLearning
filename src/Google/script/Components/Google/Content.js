@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Logo from '../../img/googlelogo.png';
-import '../../css/Content.css';
+import Logo from '../../../img/Google/googlelogo.png';
+import '../../../css/Google/Content.css';
 
 import Search from './Search';
 import Recent from './Recent';

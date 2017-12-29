@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Image from '../Components/Image';
+import Image from '../Components/Images/Image';
 import ImagesStore from '../Stores/ImagesStore'
 import * as ImagesActions from '../Actions/ImagesActions';
 

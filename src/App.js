@@ -7,6 +7,7 @@ import Google from './Google/script/Pages/Google.js';
 import Mail from './Google/script/Pages/Mail';
 import Images from './Google/script/Pages/Images';
 import TabRouter from './Google/script/Pages/TabRenderer';
+import Portfolio from "./Google/script/Pages/Portfolio";
 
 class App extends Component {
     render () {
@@ -16,6 +17,7 @@ class App extends Component {
                 <Route path='/mail' component={Mail}/>
                 <Route path='/images' component={Images}/>
                 <Route path='/tab:number' component={TabRouter}/>
+                <Route path='/portfolio' component={Portfolio}/>
             </Switch>
         );
     }

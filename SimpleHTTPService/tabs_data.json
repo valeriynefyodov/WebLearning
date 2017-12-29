@@ -1,9 +1,9 @@
 [
     {
-        "title": "One",
+        "title": "Portfolio",
         "faviconPath": "/img/favicons/favicon1.png",
-        "screenshotPath": "/img/screenshots/screenshot1.png",
-        "path": "/tab1"
+        "screenshotPath": "/img/screenshots/portfolioscreenshot.png",
+        "path": "/portfolio"
     },
     {
         "title": "Two",

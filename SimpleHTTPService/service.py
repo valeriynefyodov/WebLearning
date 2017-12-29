@@ -3,8 +3,10 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from cgi import parse_header, parse_multipart
 from urllib.parse import parse_qs
 import json
+import sys
+import io
 
-PORT_NUMBER = 8088
+DEFAULT_PORT_NUMBER = 8088
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -16,7 +18,7 @@ class Handler(BaseHTTPRequestHandler):
         response_body = ''
         if self.path.find('.json') != -1:
             self.send_header('Content-type', 'application/json')
-            json_data = json.load(open('.' + self.path))
+            json_data = json.load(io.open('.' + self.path, encoding='utf-8'))
             response_body = bytes(json.dumps(json_data), 'utf-8')
         elif self.path.find('.png') != -1:
             self.send_header('Content-type', 'image/png')
@@ -24,7 +26,6 @@ class Handler(BaseHTTPRequestHandler):
         else:
             self.send_header('Content-type', 'text/html')
 
-        # self.send_header('Content-type', 'text/html')
         self.send_header('Access-Control-Allow-Headers', 'x-requested-with')
         self.send_header('Access-Control-Max-Age:', '1728000')
         self.send_header('Access-Control-Allow-Origin', 'http://localhost:3000')
@@ -70,9 +71,14 @@ class Handler(BaseHTTPRequestHandler):
         return
 
 try:
-    server = HTTPServer(('', PORT_NUMBER), Handler)
-    print('Starting serving on port ', PORT_NUMBER, '...')
+    try:
+        port_number = int(sys.argv[1])
+    except IndexError:
+        port_number = DEFAULT_PORT_NUMBER
+
+    server = HTTPServer(('', port_number), Handler)
+    print('Starting serving on port ', port_number, '...')
     server.serve_forever()
 except KeyboardInterrupt:
-    print('Interrupt received\nStop serving on port', PORT_NUMBER)
+    print('Interrupt received\nStop serving on port', port_number)
     server.socket.close()
