@@ -1,5 +1,6 @@
 import Dispatcher from '../Dispatcher';
 import { EventEmitter } from 'events';
+import $ from 'jquery';
 
 class MailStore extends EventEmitter {
     constructor() {
@@ -19,14 +20,12 @@ class MailStore extends EventEmitter {
         ]
     }
 
-    addLetter(sender, title) {
-        const id = Date.now();
-        this.inboxList.push({
-            id,
-            sender: sender,
-            title: title
+    refreshInbox(letters) {
+        this.inboxList.length = 0;
+        let self = this;
+        letters.forEach((item) => {
+            self.inboxList.push($.extend({}, {id: Math.floor(Math.random() * (999999999 - 100000000)) + 100000000}, item));
         });
-
         this.emit('mail received');
     }
 
@@ -37,7 +36,7 @@ class MailStore extends EventEmitter {
     handleActions(action) {
         switch (action.type){
             case 'REFRESH_INBOX':
-                this.addLetter(action.sender, action.title);
+                this.refreshInbox(action.data);
                 break;
 
             default:

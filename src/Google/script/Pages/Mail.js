@@ -12,7 +12,6 @@ class Mail extends Component {
 
     componentWillMount() {
         MailStore.on('mail received', this.getMail);
-        console.log('count', MailStore.listenerCount('mail received'));
     }
 
     componentWillUnmount() {
@@ -26,7 +25,7 @@ class Mail extends Component {
     }
 
     refreshInbox() {
-        MailActions.refreshInbox(Date.now(), 'cool title');
+        MailActions.refreshInbox();
     }
 
     render () {
