@@ -4,6 +4,8 @@ import '../../../css/Google/Recent.css';
 
 import Tab from './Tab';
 
+const HOST = 'http://192.168.1.30:8088';
+
 class Recent extends Component {
 
     constructor(props) {
@@ -13,7 +15,7 @@ class Recent extends Component {
 
     componentWillMount() {
         const th = this;
-        $.getJSON('http://192.168.1.30:8088/tabs_data.json', function (data) {
+        $.getJSON(HOST + '/tabs_data.json', function (data) {
             th.setState({tabs_data: data});
         });
     }
