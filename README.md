@@ -1,5 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## How to use
+
+You should start a HTTP-server to handle app's requests.<br>
+In `SimpleHTTPService/`\:
+```sh
+http-server --cors
+```
+
+Then in `src/Google/script` you should change `HOST` variable in files below according to your server's IP-address and port:
+
+- `Actions/MailActions.js`
+- `Components/Google/Tab.js`
+- `Components/Google/Recent.js`
+- `Stores/PortfolioStore.js`
+
+After all in root directory run
+```sh
+npm run start
+```
+to start the project.
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
