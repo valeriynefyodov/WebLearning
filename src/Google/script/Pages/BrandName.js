@@ -14,7 +14,7 @@ class BrandName extends Component {
     render() {
         return (
             <div>
-                <div className='wrapper'>
+                <div className='brandname-wrapper'>
                     <div className='brandname-billboard'>
                         <Header/>
                         <Caption/>

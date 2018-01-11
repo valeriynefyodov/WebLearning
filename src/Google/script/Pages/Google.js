@@ -7,7 +7,7 @@ import Content from '../Components/Google/Content';
 class Google extends Component {
     render () {
         return (
-            <div className='wrapper'>
+            <div className='brandname-wrapper'>
                 <Header/>
                 <Content/>
             </div>

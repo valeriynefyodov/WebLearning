@@ -27,20 +27,20 @@ a:visited {
     visibility: hidden;
 }
 
-.wrapper {
+.brandname-wrapper {
     width: 100%;
     min-width: 1500px;
     min-height: 100%;
     margin-bottom: -415px;
 }
 
-.wrapper:after {
+.brandname-wrapper:after {
     content: '';
     display: block;
     height: 415px;
 }
 
-.container {
+.brandname-container {
     width: 1500px;
     margin: 0 auto;
 }

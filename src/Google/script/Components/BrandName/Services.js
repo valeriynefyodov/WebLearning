@@ -34,7 +34,7 @@ class Services extends Component {
     render() {
         return (
             <div className='brandname-services clearfix'>
-                <div className='container'>
+                <div className='brandname-container'>
                     {this.state.serviceData.map((element, index) => {
                         return <Service data={element} key={index}/>;
                     })}

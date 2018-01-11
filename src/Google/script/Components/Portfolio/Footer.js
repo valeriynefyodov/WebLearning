@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className='portfolio-footer'>
-                <div className='container'>
+                <div className='portfolio-container'>
                     <p className='portfolio-footer_text transparent'>А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна.</p>
                 </div>
             </footer>

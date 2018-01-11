@@ -23,19 +23,19 @@ body {
     opacity: 0.5;
 }
 
-.wrapper {
+.portfolio-wrapper {
     width: 100%;
     min-height: 100%;
     margin-bottom: -72px;
 }
 
-.wrapper:after {
+.portfolio-wrapper:after {
     content: "";
     height: 72px;
     display: block;
 }
 
-.container {
+.portfolio-container {
     width: 1200px;
     margin: 0 auto;
 }

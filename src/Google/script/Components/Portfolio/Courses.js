@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../../css/Portfolio/Portfolio.css';
 import '../../../css/Portfolio/Courses.css';
-import PortfolioStore from '../../Stores/PortfolioStore';
+// import PortfolioStore from '../../Stores/PortfolioStore';
 
 import BlockTitle from "./BlockTitle";
 import Course from "./Course";
@@ -19,23 +19,23 @@ class Courses extends Component {
 
     updateCoursesList() {
         this.setState({
-            coursesList: PortfolioStore.getAllCourses()
+            coursesList: this.props.portfolioStore.getAllCourses()
         });
     }
 
     componentWillMount() {
-        PortfolioStore.on('data changed', this.updateCoursesList);
+        this.props.portfolioStore.on('data changed', this.updateCoursesList);
         this.updateCoursesList();
     }
 
     componentWillUnmount() {
-        PortfolioStore.removeListener('data changed', this.updateCoursesList);
+        this.props.portfolioStore.removeListener('data changed', this.updateCoursesList);
     }
 
     render() {
         return (
             <section className='portfolio-courses'>
-                <div className='container'>
+                <div className='portfolio-container'>
                     <BlockTitle mainTitle='Курсы на loftblog' subtitle='которые мне помогут в выполениении этого задания'/>
                     <div className='portfolio-courses-container'>
                         {this.state.coursesList.map((item) => {

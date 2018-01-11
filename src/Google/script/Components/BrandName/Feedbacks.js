@@ -7,7 +7,7 @@ class Feedbacks extends Component {
     render() {
         return (
             <section className='clearfix'>
-                <div className='container'>
+                <div className='brandname-container'>
                     <BlockTitle class='brandname-feedbacks__title' title='Our Happy Clients.'/>
                     <div className='brandname-feedbacks'>
                         <Feedback/>

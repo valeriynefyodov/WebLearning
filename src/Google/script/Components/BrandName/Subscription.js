@@ -7,7 +7,7 @@ class Subscription extends Component {
     render() {
         return (
             <section className='brandname-subscription clearfix'>
-                <div className='container'>
+                <div className='brandname-container'>
                     <BlockTitle title='subscribe to our newsletter.' class='brandname-subscription__title'/>
                     <SubscriptionForm/>
                 </div>

@@ -10,7 +10,7 @@ class Header extends Component {
     render() {
         return (
             <header className='portfolio-header'>
-                <div className='container'>
+                <div className='portfolio-container'>
                     <img src={Avatar} alt='' className='portfolio-header__logo'/>
                     <PersonalInfo/>
                     <Socials/>

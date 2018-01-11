@@ -12,7 +12,7 @@ class Student extends Component {
 
         return (
             <section className='portfolio-student'>
-                <div className='container'>
+                <div className='portfolio-container'>
                     <BlockTitle mainTitle='О будущем ученике' subtitle='Ребятам из Loftschool будет полезно узнать немного обо мне'/>
                     <Fact type='student-fact__image_hello' title='Немного обо мне' text={aboutMeText} link={aboutMeLink}/>
                     <Fact type='student-fact__image_exp' title='Мой опыт в разработке' text={skillsText}/>

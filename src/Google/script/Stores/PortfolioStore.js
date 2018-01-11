@@ -1,4 +1,3 @@
-import Dispatcher from '../Dispatcher';
 import { EventEmitter } from 'events';
 import $ from 'jquery'
 
@@ -52,7 +51,6 @@ class PortfolioStore extends EventEmitter {
     }
 }
 
-const portfolioStore = new PortfolioStore();
-Dispatcher.register(portfolioStore.handleActions.bind(portfolioStore));
-
-export default portfolioStore;
+// const portfolioStore = new PortfolioStore();
+// Dispatcher.register(portfolioStore.handleActions.bind(portfolioStore));
+export default PortfolioStore;

@@ -7,7 +7,7 @@ class CallToAction extends Component {
     render() {
         return (
             <section className='brandname-call-to-action clearfix'>
-                <div className='container'>
+                <div className='brandname-container'>
                     <figure>
                         <img className='brandname-call-to-action__browser-image' src={BrowserImage} alt=""/>
                     </figure>

@@ -7,7 +7,7 @@ class Header extends Component {
     render() {
         return (
             <header className='brandname-header clearfix'>
-                <div className='container'>
+                <div className='brandname-container'>
                     <Logo place='header'/>
                     <Menu place='header'/>
                 </div>
